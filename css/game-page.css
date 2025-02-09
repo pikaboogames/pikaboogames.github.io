@@ -1,0 +1,716 @@
+/* Game Page Styles */
+.game-content {
+    padding-top: 80px;
+    min-height: calc(100vh - 400px);
+}
+
+.game-hero {
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.game-hero-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.game-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-tagline {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.store-buttons img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.store-buttons a:hover img {
+    transform: translateY(-2px);
+}
+
+.game-screenshots {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #f8f9fa, #fff);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-screenshots::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.screenshot-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    aspect-ratio: 16/9;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 2;
+    color: #333;
+}
+
+.slider-btn:hover {
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.slider-btn.prev {
+    left: -25px;
+}
+
+.slider-btn.next {
+    right: -25px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.slider-dot:hover {
+    background: #bbb;
+}
+
+.slider-dot.active {
+    background: #007bff;
+    transform: scale(1.2);
+}
+
+.game-features {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #FFD700;
+    border-radius: 3px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feature-item {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-image-wrapper {
+    position: relative;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+}
+
+.feature-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover .feature-image {
+    transform: scale(1.05);
+}
+
+.feature-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.feature-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+}
+
+.feature-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-hero {
+        padding: 60px 0;
+    }
+
+    .game-hero-logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .game-hero h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .game-tagline {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .game-screenshots {
+        padding: 60px 0 80px;
+    }
+
+    .slider-container {
+        border-radius: 15px;
+        margin: 0 25px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .slider-btn.prev {
+        left: 0;
+    }
+
+    .slider-btn.next {
+        right: 0;
+    }
+
+    .slider-dots {
+        bottom: -25px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .slider-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .feature-content h3 {
+        font-size: 20px;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .screenshot-slider {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-slider {
+        padding: 10px;
+    }
+
+    .slider-container {
+        margin: 0 15px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+/* Game Hero Section */
+.game-hero.seaside-secrets {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/seaside-secrets-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0 60px;
+}
+
+.game-hero.seaside-secrets .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.game-hero-logo.seaside-secrets {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+.game-hero.seaside-secrets h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.game-tagline.seaside-secrets {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.store-buttons.seaside-secrets {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeInUp 1s ease 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.store-buttons.seaside-secrets a {
+    transition: transform 0.3s ease;
+}
+
+.store-buttons.seaside-secrets a:hover {
+    transform: translateY(-5px);
+}
+
+.store-buttons.seaside-secrets img {
+    height: 50px;
+    width: auto;
+}
+
+/* Game Screenshots Section */
+.game-screenshots.seaside-secrets {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.section-title.seaside-secrets {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.screenshot-slider.seaside-secrets {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.slider-container.seaside-secrets {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track.seaside-secrets {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide.seaside-secrets {
+    min-width: 100%;
+    padding: 0 15px;
+}
+
+.slide.seaside-secrets img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider-btn.seaside-secrets {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-btn.seaside-secrets:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev.seaside-secrets {
+    left: 0;
+}
+
+.next.seaside-secrets {
+    right: 0;
+}
+
+.slider-dots.seaside-secrets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot.seaside-secrets {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.seaside-secrets.active {
+    background: #333;
+}
+
+/* Game Features Section */
+.game-features.seaside-secrets {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.feature-grid.seaside-secrets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feature-item.seaside-secrets {
+    text-align: center;
+}
+
+.feature-image-wrapper.seaside-secrets {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image.seaside-secrets {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.feature-item.seaside-secrets:hover .feature-image.seaside-secrets {
+    transform: scale(1.05);
+}
+
+.feature-content.seaside-secrets h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-content.seaside-secrets p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .feature-grid.seaside-secrets {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .game-hero.seaside-secrets h1 {
+        font-size: 3rem;
+    }
+
+    .game-tagline.seaside-secrets {
+        font-size: 1.3rem;
+    }
+
+    .game-hero-logo.seaside-secrets {
+        width: 250px;
+    }
+
+    .feature-grid.seaside-secrets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-hero.seaside-secrets {
+        min-height: 70vh;
+        padding: 80px 0 40px;
+    }
+
+    .game-hero.seaside-secrets h1 {
+        font-size: 2.5rem;
+    }
+
+    .game-tagline.seaside-secrets {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .game-hero-logo.seaside-secrets {
+        width: 200px;
+    }
+
+    .store-buttons.seaside-secrets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store-buttons.seaside-secrets img {
+        height: 45px;
+    }
+
+    .game-screenshots.seaside-secrets {
+        padding: 60px 0;
+    }
+
+    .section-title.seaside-secrets {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .screenshot-slider.seaside-secrets {
+        padding: 0 40px;
+    }
+
+    .feature-grid.seaside-secrets {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .feature-content.seaside-secrets h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-hero.seaside-secrets h1 {
+        font-size: 2rem;
+    }
+
+    .game-tagline.seaside-secrets {
+        font-size: 1rem;
+    }
+
+    .game-hero-logo.seaside-secrets {
+        width: 180px;
+    }
+
+    .store-buttons.seaside-secrets img {
+        height: 40px;
+    }
+
+    .screenshot-slider.seaside-secrets {
+        padding: 0 30px;
+    }
+
+    .slider-btn.seaside-secrets {
+        width: 35px;
+        height: 35px;
+    }
+
+    .feature-content.seaside-secrets p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-hero.seaside-secrets h1 {
+        font-size: 1.8rem;
+    }
+
+    .game-hero-logo.seaside-secrets {
+        width: 150px;
+    }
+
+    .section-title.seaside-secrets {
+        font-size: 1.8rem;
+    }
+}

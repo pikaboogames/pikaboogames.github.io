@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikaBoo Studio - Mobile Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Include Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="PikaBoo Studio" class="logo-img">
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#games">GAMES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="seaside-secrets.html">Seaside Secrets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Deliver Happiness</h1>
+                <p class="hero-subtitle">Experience the joy of gaming with our innovative mobile games that bring people
+                    together</p>
+                <div class="hero-buttons">
+                    <a href="#games" class="btn-primary">Explore Games</a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="company-intro">
+            <div class="container">
+                <h2>Our goal is to create immersive, enjoyable games that connect people and make every moment more fun.
+                </h2>
+            </div>
+        </section>
+
+        <section id="games" class="games-showcase">
+            <div class="container">
+                <h2 class="section-title">Our Games</h2>
+                <div class="games-grid">
+                    <div class="game-card" onclick="location.href='seaside-secrets.html';">
+                        <img src="images/game1.png" alt="Seaside Secrets Preview" class="game-img">
+                        <div class="game-logo">
+                            <img src="images/game1-logo.png" alt="Seaside Secrets Logo">
+                            <div class="game-description">
+                                Ready to find the truth behind the mystery? Set out to merge everything and obtain
+                                clues!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>CONTACT US</h4>
+                    <p>Customer Service: <a href="mailto:pikaboo1870@gmail.com">pikaboo1870@gmail.com</a></p>
+                    <p>Company Address: Rajkot, Gujarat, India</p>
+                </div>
+                <div class="footer-downloads">
+                    <!-- <a target="_blank" href="#" class="app-store">
+                        <img src="images/appstore.svg" alt="Download on the App Store">
+                    </a> -->
+                    <a target="_blank" href="https://play.google.com/store/apps/developer?id=PikaBoo" class="google-play">
+                        <img src="images/googleplay.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="terms-of-service.html" class="underline-hover">USER AGREEMENT</a>
+                <a href="privacy-policy.html" class="underline-hover">PRIVACY POLICY</a>
+                <a href="children-privacy-policy.html" class="underline-hover">CHILDREN PRIVACY</a>
+            </div>
+            <div class="footer-legal">
+                <p>Copyright 2025 PikaBoo Studio Inc. reserved all the right.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Handle Dropdowns in Mobile
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-container') && !e.target.closest('.mobile-menu-btn')) {
+                mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }
+        });
+    </script>
+</body>
+
+</html>
