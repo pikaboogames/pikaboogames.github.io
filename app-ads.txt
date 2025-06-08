@@ -418,3 +418,91 @@ pubmatic.com, 163319, RESELLER, 5d62403b186f2ace
 pubwise.io, 22376824, RESELLER, c327c91a93a7cdd3
 verve.com, 15503, RESELLER, 0c8f5958fc2d6270
 videoheroes.tv, 212428, RESELLER, 064bc410192443d8
+
+richaudience.com, q3KyMB36ue, RESELLER
+blueseasx.com, 203613, RESELLER, 7998eac5087f6110
+xandr.com, 3318, RESELLER
+33across.com, 0010b00002MptSLAAZ, RESELLER, bbea06d9c4d2853c
+aralego.com, par-BE7E667E3339AD6BC7BA2887D6E7227A, RESELLER
+sharethrough.com, 5294, RESELLER, d53b998a7bd4ecd2
+openx.com, 540396775, RESELLER, 6a698e2ec38604c6
+smartadserver.com, 4839, RESELLER, 060d053dcf45cbf3
+video.unrulymedia.com, 3881266972, RESELLER
+bidease.com, bidease_seller_20, RESELLER
+pubnative.net, 1007262, RESELLER, d641df8625486a7b
+taurusx.com, 80635, RESELLER
+google.com, pub-1682595508078257, RESELLER, f08c47fec0942fa0
+sharethrough.com, XeKuhSkz, RESELLER, d53b998a7bd4ecd2
+ushareit.com, LCb555b3bc8667a09a, RESELLER
+risecodes.com, 66bca72035bff70001caa46f, RESELLER
+opera.com, pub6650235485952, RESELLER, 55a0c5fd61378de3
+smartadserver.com, 4998, RESELLER
+onairglobal.com, 4357629, RESELLER
+contextweb.com, 563605, RESELLER, 89ff185a4c4e857c
+adyoulike.com, 994b7b4e03898048761c7110f11e56c2, RESELLER
+connectad.io, 453, RESELLER, 85ac85a30c93b3e5
+xandr.com, 13293, RESELLER, f5ab79cb980f11d1
+app-stock.com, 558223, RESELLER, ed8c126ea5971415
+ucfunnel.com, par-BE7E667E3339AD6BC7BA2887D6E7227A, RESELLER
+pubmatic.com, 159499, RESELLER, 5d62403b186f2ace
+sonobi.com, 2b51f34067, RESELLER, d1a215d9eb5aee9e
+carbonatix.com, 14840966, RESELLER
+admanmedia.com, 2037, RESELLER
+appnexus.com, 16244, RESELLER
+lijit.com, 273050, RESELLER, fafdf38b16bf6b2b
+adiiix.com, par-BE7E667E3339AD6BC7BA2887D6E7227A, RESELLER
+brightcom.com, 23120, RESELLER
+thebrave.io, 9840732, RESELLER, c25b2154543746ac
+rubiconproject.com, 26360, RESELLER, 0bfd66d529a55807
+axonix.com, 59107, RESELLER, bc385f2b4a87b721
+iion.io, 10162, RESELLER
+pubnative.net, 1007501, RESELLER, d641df8625486a7b
+visoon.de, 64393, RESELLER
+appnexus.com, 14080, RESELLER, f5ab79cb980f11d1
+xandr.com, 16546, RESELLER
+xandr.com, 8916, RESELLER
+bidmachine.io, 162, RESELLER
+contextweb.com, 563079, RESELLER, 89ff185a4c4e857c
+start.io, 150505487, RESELLER
+freewheel.tv, 1601388, RESELLER
+rubiconproject.com, 20050, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26386, RESELLER, 0bfd66d529a55807
+inmobi.com, ef083d721beb4c0f8776ced01e262c03, RESELLER, 83e75a7ae333ca9d
+app-stock.com, 384491, RESELLER
+aceex.io, 1926, RESELLER, b1cf3c874d5c6682
+smartadserver.com, 5294, RESELLER, 060d053dcf45cbf3
+smartadserver.com, 4865, RESELLER
+pubmatic.com, 164798, RESELLER, 5d62403b186f2ace
+contextweb.com, 562818, RESELLER, 89ff185a4c4e857c
+loopme.com, 11347, RESELLER, 6c8d5f95897a5a3b
+loopme.com, 14009, RESELLER, 6c8d5f95897a5a3b
+appnexus.com, 17234, RESELLER
+inmobi.com, 7798aa742d014cd79627bb67ec431379, RESELLER, 83e75a7ae333ca9d
+loopme.com, 11561, RESELLER, 6c8d5f95897a5a3b
+advertising.com, 82632, RESELLER
+grouprvn.com, 420212011, RESELLER
+smartadserver.com, 4190, RESELLER, 060d053dcf45cbf3
+opera.com, pub6148735850944, RESELLER, 55a0c5fd61378de3
+lacunads.com, LCb555b3bc8667a09a, RESELLER
+appnexus.com, 12061, RESELLER, f5ab79cb980f11d1
+smartadserver.com, 3817, RESELLER
+inmobi.com, 33f042dcf10549ae9fb1b9e2ee0ecfc3, RESELLER, 83e75a7ae333ca9d
+krushmedia.com, ajxf6R585a9m6Catvk, RESELLER
+appnexus.com, 1354, RESELLER
+appnexus.com, 15670, RESELLER
+triplelift.com, 10223, RESELLER, 6c33edb13117fd86
+videoheroes.tv, 212450, RESELLER, 064bc410192443d8
+screenil.com, 554156, RESELLER
+improvedigital.com, 2371, RESELLER
+loopme.com, 11605, RESELLER, 6c8d5f95897a5a3b
+themediagrid.com, FALINO, RESELLER, 35d5010d7789b49d
+google.com, pub-5060663379040713, RESELLER, f08c47fec0942fa0
+azberry.com, 321006, RESELLER
+improvedigital.com, 1408, RESELLER
+sharethrough.com, K5WDGAsP, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, DQQogebZ, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, SniqCOMC, RESELLER, d53b998a7bd4ecd2
+video.unrulymedia.com, 3634565696, RESELLER, 6f752381ad5ec0e5
+media.net, 8CU813E2H, RESELLER
+mango.mp, 323120, RESELLER
+lijit.com, 502284, RESELLER, fafdf38b16bf6b2b
