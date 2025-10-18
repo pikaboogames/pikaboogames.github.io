@@ -299,3 +299,7 @@ improvedigital.com, 2464, RESELLER
 improvedigital.com, 2609, RESELLER
 improvedigital.com, 2371, RESELLER
 loopme.com, 15629, RESELLER, 6c8d5f95897a5a3b
+themediagrid.com, NC7LXT, RESELLER, 35d5010d7789b49d
+video.unrulymedia.com, 657436911, RESELLER
+indexexchange.com, 214183, RESELLER, 50b1c356f2c5c8fc
+outbrain.com, 0073fa86cff719c752763d2c3ee52c8f00, RESELLER
